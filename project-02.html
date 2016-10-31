@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<link rel='icon' href='favicon.ico'>
+<title> sessa.website </title>
+
+</head>
+
+
+<body>
+
+<a class="toplink"  href="#"> &#8638; </a>
+
+<div class="wrapper">
+
+	<div class="wrapper__centerlink">
+		<a class="wrapper__backlink" href="index.html"> &#8637;</a>
+	</div>
+
+	<img class="wrapper__image" src="images/sessa_1.png">	
+
+	<p class="wrapper__copy"> @sessasessasessa, artist’s Instagram feed, digital print, acrylic keyrings, varying size, 2016 Each keyring corresponds to one image from the artist’s Instagram feed, they are sold for $2 each, once a keyring is purchased the original digital image is deleted off Instagram. </p>
+
+	<img class="wrapper__image" src="images/sessa_2.png">
+
+	<img class="wrapper__image" src="images/sessa_3.png">
+
+	<img class="wrapper__image" src="images/sessa_4.png">
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > 400 ) {
+		$('.toplink').fadeIn('slow');
+	} 
+	else {
+		$('.toplink').fadeOut('slow');
+	}
+});
+
+$('.toplink').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
+</script>
+
+</html>

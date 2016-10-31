@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<link rel='icon' href='favicon.ico'>
+<title> sessa.website </title>
+
+</head>
+
+
+<body>
+
+
+<a class="toplink"  href="#"> &#8638; </a>
+
+
+<div class="wrapper">
+
+	<a class="wrapper__centerlink" href="contact.html"> 
+		<h1 class="wrapper__title"> contact </h1>
+	</a>
+
+	<a class="wrapper__link" href="project-01.html">
+		<img class="wrapper__image" src="images/sadmugs_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-02.html">
+		<img class="wrapper__image" src="images/sessasessasessa_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-03.html">
+		<img class="wrapper__image" src="images/relax_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-04.html">
+		<img class="wrapper__image" src="images/constraint_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-05.html">
+		<img class="wrapper__image" src="images/comeseeme_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-06.html">
+		<img class="wrapper__image" src="images/atruepromise_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-07.html">
+		<img class="wrapper__image" src="images/peakacessory_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-08.html">
+		<img class="wrapper__image" src="images/cura_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-09.html">	
+		<img class="wrapper__image" src="images/worseforwear_index.png">
+	</a>
+
+	<a class="wrapper__link" href="project-10.html">
+		<img class="wrapper__image" src="images/presence_index.png">
+	</a>
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > 400 ) {
+		$('.toplink').fadeIn('slow');
+	} 
+	else {
+		$('.toplink').fadeOut('slow');
+	}
+});
+
+$('.toplink').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
+</script>
+
+</html>
