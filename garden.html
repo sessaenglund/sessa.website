@@ -15,20 +15,47 @@
 
 <body>
 
+<!-- BACK TO TOP LINK -->
+<a class="toplink"  href="#"> &#8638; </a>
+
 <div class="wrapper">
 
 	<div class="wrapper__centerlink">
 		<a class="wrapper__backlink" href="index.html"> &#8637;</a>
 	</div>
 
-	<!-- <img class="wrapper__image" src="images/realsessa.png"> -->	
+	<img class="wrapper__image" src="images/garden_1.jpg">	
 
-	<p class="wrapper__copy"> Sessa Englund is an artist and curator working across sculptural and time-based mediums working in NYC and Gothenburg, Sweden. They received their BFA at the School of Art+Design, S.U.N.Y Purchase, and is a member and founder of Disclaimer Gallery and Cura (Projects). 
-	<br> <br>
-	For more information and resume email sessaenglund [at] gmail [dot] com or DM @sessasessasessa </p>
+	<div class="wrapper__centerlink">
+		<p class="wrapper__copy"> Untitled, 2017 </p>
+		
+	</div>
+
+	<img class="wrapper__image" src="images/garden_2.jpg">
+
 
 </div>
 
 </body>
+
+<script type="text/javascript">
+
+$(window).scroll(function() {
+	if ( $(window).scrollTop() > 400 ) {
+		$('.toplink').fadeIn('slow');
+	} 
+	else {
+		$('.toplink').fadeOut('slow');
+	}
+});
+
+$('.toplink').click(function() {
+	$('html, body').animate({
+		scrollTop: 0
+	}, 700);
+	return false;
+});
+
+</script>
 
 </html>
